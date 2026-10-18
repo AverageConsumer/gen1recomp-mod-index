@@ -1,62 +1,80 @@
 # Kanto Gear
 
-**A second screen when you have one. A better layout when you do not.**
+A DS-inspired Pokégear and C-Gear companion for Pokémon Gen 1–3 in
+Gen1Recomp. Keep your game on one screen and maps, team, notes and progress
+close at hand, using touch or a mouse.
 
-Kanto Gear adds a configurable companion interface to Pokémon Red, Blue,
-Yellow and Gold in Gen1Recomp. It can use a real second display, share one
-screen with the game or stay hidden until you need it. The game underneath is
-unchanged; Kanto Gear presents its information and controls in a
-touch-friendly, Game Boy-inspired interface.
+Supports **Red, Blue, Yellow, Gold, Silver, Crystal, Ruby, Sapphire,
+FireRed, LeafGreen and Emerald** on Android, Windows and Linux.
 
-## One mod for every screen setup
+## Choose your screen setup
 
-- **Single Screen** keeps either the game or Kanto Gear fullscreen and swaps
-  between them on demand.
-- **Combined Screen** places both views in one window, side by side, stacked or
-  as a movable overlay with an adjustable companion size.
-- **Dual Screen** routes Kanto Gear to another Android display or opens it as a
-  normal movable companion window on desktop. If that display disappears, the
-  game remains reachable.
+- **Fullscreen Swap:** switch between the game and Gear on one screen.
+- **Combined:** stack both views, place them side by side or use a corner overlay.
+- **Separate:** use a dual-screen handheld or independent desktop windows.
+- **Phone / Browser:** pair a browser on your local Wi-Fi as an optional Gear
+  display, with optional touch controller buttons. This mode is experimental.
 
-The same pages and controls work across dual-screen handhelds, external
-displays, phones, desktop PCs and single-screen handhelds. No device-specific
-Kanto Gear fork is required.
+Choose Pokégear or C-Gear, each with Light, Dark and Auto variants. Arrange
+Home pages with apps and widgets, and enable optional apps in Silph Store.
+Compatible apps from other installed Recomp mods can appear in the Store too.
 
-## What the companion adds
+## Apps and controls
 
-- Live region maps and detailed local maps with exits, items and hidden items.
-- Party status, moves, HP and EXP at a glance.
-- Trainer Card, badges, Pokédex progress, area information and step tracking.
-- Contextual field tools for the Bicycle, fishing rods and HMs.
-- Touch-friendly battle, bag, dialogue, PC box and move controls.
-- Standard, Gear and Full Gear battle layouts.
-- An optional **Info** battle view with opponent typing, base stats, matchups
-  and Pokédex details while the original battle UI stays on the game screen.
-- Classic Game Boy-inspired themes plus modern light and dark alternatives.
+- **Explorer and Map:** live local maps, encounters, trainers, items, hidden
+  finds, regional navigation and available Fly destinations.
+- **Party, Bag and Pokédex:** partner summaries, held items, contextual item
+  actions, complete Dex entries, evolutions and habitats.
+- **Stamps and Notes:** location completion, remaining goals, text notes,
+  checklists and drawings.
+- **Day-Care and Calendar:** boarded partners, breeding information where
+  supported, weekly events in Gen 2 and game-specific activities in Gen 3.
+- **Field Kit, Trainer Card and Step Counter:** currently usable field tools,
+  trainer records, badges and movement tracking.
+- **Battle controls:** Companion, Info, Gear and Full Gear layouts, including
+  supported Gen 3 double battles. Native menus also gain matching touch pages.
+- **Silph Connect:** player presence through Recomp's shared connection.
+  Friends, chat and battle/trade invitations are not available.
 
-## Requirements and compatibility
+Discovery presets let you choose original-game information, guidance or all
+available data, with individual switches for a custom setup. English, German,
+Spanish (Spain), French, Japanese and Italian UI catalogs are included; some
+newer labels fall back to English.
 
-Kanto Gear 2.2.0 supports the official Gen1Recomp 0.1.99 release or newer and
-works with Pokémon Red, Blue, Yellow and Gold. It does not require a Voxel
-renderer or any other mod, does not change gameplay and does not affect the
-link-play fingerprint.
+## Install and requirements
 
-The `engine_internals` permission provides read-only game state and display
-routing used by the companion pages. Optional German and Spanish (Spain)
-language packs are available beside the main release.
-
-Install Kanto Gear through the index or import `kanto_gear-2.2.0.zip` from the
+Install from the Mod Index or import the ZIP from the
 [latest release](https://github.com/AverageConsumer/kanto-gear/releases/latest),
-then enable it and choose a display mode in its settings. Future releases are
-detected automatically by the normal Gen1Recomp update system.
+enable Kanto Gear and open its Options. The same ZIP works on all three host
+platforms. It includes no ROM or save; bring your own supported game ROM.
 
-Kanto Gear contains no ROM-derived content. You need your own supported game
-ROM.
+Use the latest official Gen1Recomp. Minimum versions are **0.3.20** for Gen 1,
+Gen 2 and FireRed/LeafGreen, **0.3.33** for Emerald (US 1.0), and **0.3.74** for
+Ruby/Sapphire (US/Europe). Gen 3 welcomes broader playthrough testing; some
+specialized native screens remain on the game screen.
 
-## Support
+Permissions match the mod manifest:
 
-Source, documentation and releases are available in the
-[Kanto Gear repository](https://github.com/AverageConsumer/kanto-gear).
-Please report display, touch or companion-UI problems in its
-[issue tracker](https://github.com/AverageConsumer/kanto-gear/issues) with your
-device, operating system, display arrangement and installed versions.
+- `engine_internals`: native game integration, companion controls and display routing.
+- `network`: optional local phone transport and integration with Recomp's online client.
+- `compute`: worker threads for phone pairing and video processing.
+
+Phone mode uses an **unencrypted local connection**. Pair only on a private
+network you trust, and do not expose its port to the internet. One-time pairing
+credentials expire after five minutes. Open Gear content, including notes, is
+visible to the paired browser. Native online arena restrictions still apply.
+
+## Support and contributions
+
+See the [repository](https://github.com/AverageConsumer/kanto-gear) for screenshots,
+the full feature guide and development documentation. Report problems through
+the [bug form](https://github.com/AverageConsumer/kanto-gear/issues/new?template=bug_report.yml)
+with your game, device, versions, display mode and reproduction steps.
+Use the [translation form](https://github.com/AverageConsumer/kanto-gear/issues/new?template=translation.yml)
+for wording corrections and the
+[security policy](https://github.com/AverageConsumer/kanto-gear/blob/main/SECURITY.md)
+for private vulnerability reports.
+
+Kanto Gear is an independent fan project under the MIT License, with separate
+notices for bundled fonts and libraries. It is not an official Gen1Recomp or
+Pokémon product.
