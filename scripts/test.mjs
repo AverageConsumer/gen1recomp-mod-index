@@ -101,6 +101,15 @@ test('a complete entry validates', () => {
   assert.deepEqual(validate(GOOD_META, schema), []);
 });
 
+test('worker compute permission is accepted without allowing unknown permissions', () => {
+  const permissions = ['engine_internals', 'network', 'compute'];
+  assert.deepEqual(validate({ ...GOOD_META, permissions }, schema), []);
+  assert.match(validate({ ...GOOD_META, permissions: ['unknown_permission'] }, schema).join(), /is not one of/);
+  assert.match(validate({ ...GOOD_META, permissions: ['compute', 'compute'] }, schema).join(), /duplicate/);
+  const browserSchema = JSON.parse(readFileSync(join(repoRoot, 'site/data/mod.schema.json'), 'utf8'));
+  assert.deepEqual(browserSchema, schema);
+});
+
 test('game targets accept every supported game and generation', () => {
   const games = ['red', 'blue', 'yellow', 'gold', 'silver', 'crystal',
     'firered', 'leafgreen', 'ruby', 'sapphire', 'emerald', 'gen1', 'gen2', 'gen3', 'frlg', 'rse', 'all'];
