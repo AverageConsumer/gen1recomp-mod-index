@@ -1,10 +1,4 @@
 {
   "version": 1,
-  "failing": {
-    "mods/AntoniMan31@trad-fr-extended": {
-      "strikes": 3,
-      "since": "2026-10-20T16:34:20.581Z",
-      "reason": "github \"antoniman31/trad-fr-extended\" returned 404 — deleted, renamed away, or made private"
-    }
-  }
+  "failing": {}
 }
