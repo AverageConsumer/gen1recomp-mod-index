@@ -1,10 +1,4 @@
 {
   "version": 1,
-  "failing": {
-    "mods/AntoniMan31@day_night_cycle": {
-      "strikes": 3,
-      "since": "2026-10-22T03:56:03.138Z",
-      "reason": "github \"antoniman31/gen1recomp-cycle-jour-nuit-FR\" returned 404 — deleted, renamed away, or made private"
-    }
-  }
+  "failing": {}
 }
